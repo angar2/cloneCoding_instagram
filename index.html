@@ -11,13 +11,13 @@
 
         .header {
             background-color: #ffffff;
-            border-bottom: 1px solid #ebebeb;
+            border-bottom: 1px solid #dbdbdb;
         }
 
         .bar {
-            display: flex;
+            width: 100%;
             height: 60px;
-            margin: auto;
+            display: flex;
             justify-content: center;
             align-items: center;
         }
@@ -25,19 +25,20 @@
         .barContent {
             width: 975px;
             height: 60px;
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
 
             display: flex;
-            justify-content: center;
             align-items: center;
+            box-sizing: border-box;
         }
 
         .logoBox {
             float: left;
             width: 333.5px;
             height: 36px;
-            align-items: center;
+            display: flex;
+            justify-content: flex-start; /* 좌측 정렬*/
         }
 
         .logo {
@@ -65,10 +66,13 @@
             outline: none;
         }
         .barMenuBox {
-            float: left;
+            float: right;
             width: 278px;
             height: 24px;
             padding-left: 24px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end; /* 우측 정렬*/
         }
         .barMenuIcon {
             width: 24px;
@@ -84,10 +88,11 @@
         }
         .main {
             background-color: #efefef;
+
         }
         .mainView {
             margin: auto;
-            width: 965px;
+            width: 935px;
             height: 1000px;
             margin-top: 24px;
             justify-content: center;
@@ -106,19 +111,17 @@
             background-color: white;
         }
         .story {
-            width: 614px;
             height: 103px;
             margin-bottom: 24px;
             padding: 16px 0px 16px 0px;
             background-color: #ffffff;
-            border: 1px solid #ebebeb;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            box-sizing: border-box;
         }
         .feed {
-            float: left;
-            width: 614px;
-            height: 800px;
             display: inline;
-            background-color: #ffffff;
+            background-color: #efefef;
         }
         .footer {
             height: 134px;
@@ -128,6 +131,81 @@
         .footerBox {
             height: 100%;
             margin: 24px 0px 52px 0px;
+        }
+        .content {
+            height: 890px;
+            margin-bottom: 24px;
+            background-color: #ffffff;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            margin: 0px -1px 24px -1px;
+        }
+        .contentHeader {
+            display: flex;
+            height: 60px;
+            align-items: center;
+        }
+        .userIdBox {
+            width: 100%;
+            height: 100%;
+            padding-top: 14px;
+            padding-right: 4px;
+            padding-bottom: 14px;
+            padding-left: 16px;
+            box-sizing: border-box;
+            display: flex;
+            align-items:center;
+        }
+        .userProfile {
+            border-radius: 50%;
+            background-color: #ebebeb;
+        }
+        .userImg {
+            width: 42px;
+            height: 42px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            border-radius: 50%;
+            }
+        .userId {
+            height: 100%;
+            margin-left: 14px;
+            display: flex;
+            align-items:center;
+        }
+        .userIdLink{
+            font-size: 14px;
+            font-weight: 600;
+            color: #262626;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .meatMenuBox {
+            padding-right: 8px;
+        }
+        .meatMenuButton {
+            padding: 8px;
+            border: 0;
+            background: 0;
+            cursor:pointer; /*손모양 버튼*/
+        }
+        .meatMenu {
+            display: flex;
+            position: relative;
+            color: #262626;
+            fill: #262626;
+            height: 24px;
+            width: 24px;
+        }
+        .contentBody {
+            width: 614px;
+            height: 614px;
+            background-color: gray;
+        }
+        .contentBottom {
+            height: 177px;
         }
     </style>
 </head>
@@ -159,7 +237,31 @@
     <div class="mainView">
         <section class="mainSection">
             <div class="story"></div>
-            <div class="feed"></div>
+            <div class="feed">
+                <div class="content">
+                    <div class="contentHeader">
+                        <header class="userIdBox">
+                            <div class="userProfile">
+                                <img alt="" class="userImg" src="https://platum.kr/wp-content/uploads/2019/12/64497335_490811004989301_7459130390851092480_n.png">
+                            </div>
+                            <div class="userId">
+                                <a class="userIdLink" href="">spartacodingclub</a>
+                            </div>
+                        </header>
+                        <div class="meatMenuBox">
+                            <button class="meatMenuButton">
+                                <svg class="meatMenu">
+                                    <circle cx="12" cy="12" r="1.5"></circle>
+                                    <circle cx="6" cy="12" r="1.5"></circle>
+                                    <circle cx="18" cy="12" r="1.5"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contentBody"></div>
+                    <div class="contentBottom"></div>
+                </div>
+            </div>
         </section>
         <aside class="aside">
         </aside>
