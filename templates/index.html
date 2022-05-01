@@ -29,7 +29,7 @@
 
         function postComment() {
 
-            let comment = $('#postComment').val()
+            let comment = $("#postComment").val()
 
             if (comment == '') {
                 return;
@@ -65,7 +65,7 @@
                     }
 
                     let commentsLength = Object.keys(comments).length;
-                    console.log(commentsLength)
+
                     $("#hideCommentButton").text('댓글 ' + commentsLength + '개 모두 보기');
 
                     if (commentsLength >= 4) {
@@ -247,13 +247,13 @@
                     <div class="contentHeader">
                         <header class="userIdBox">
                             <div class="userProfile">
-                                <a class="userProfileImg" href="">
+                                <a class="userProfileImg" href="https://www.instagram.com/tolerance_e/">
                                     <img alt="" style="height: 100% "
                                          src="http://angar2.shop/static/img/img_eom.png">
                                 </a>
                             </div>
                             <div class="userId">
-                                <a class="userIdLink" href="">angar2</a>
+                                <a class="userIdLink" href="">tolerance_e</a>
                             </div>
                         </header>
                         <div class="meatMenuBox">
@@ -268,7 +268,7 @@
                     </div>
                     <div class="contentBody">
                         <img class="contentImg"
-                             src="https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733__340.jpg">
+                             src="https://ppss.kr/wp-content/uploads/2018/03/6-10-540x540.jpg"/>
                     </div>
                     <div class="contentBottom">
                         <div class="contentBottomMenuBox">
@@ -327,7 +327,7 @@
                             <div class="comments">
                                 <div class="commentBox">
                                     <a class="commentUserId" alt="계정">angar2</a>
-                                    <span class="comment">안녕하세요. 오늘 날씨가 참 좋네요! 봄바람 휘날리며 흩날리는 벚꽃 잎이 울려 퍼질 이 거리를 둘이 걸어요</span>
+                                    <span class="comment">내가 먹은건 아니지만 맛있겠지?</span>
                                 </div>
                             </div>
                             <div class="comments" id="comments">
