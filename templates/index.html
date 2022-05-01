@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="imgage/x-icon"
           href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/200px-Instagram_logo_2016.svg.png">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../static/styles/styles.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -13,6 +13,7 @@
     <script>
         $(document).ready(function () {
             $('#hideComment').hide();
+            showComment();
         });
 
         function giveLike() {
@@ -25,39 +26,61 @@
             }
         }
 
-        let comments = []
 
         function postComment() {
+
             let comment = $('#postComment').val()
+
             if (comment == '') {
                 return;
             } else {
-                let temp_html = `<div class="commentBox">
-                                <a class="commentUserId" alt="계정">someone</a>
-                                <span class="comment">${comment}</span>
-                            </div>`
-                $('#comments').append(temp_html);
-                $('#postComment').val('')
-
-                comments.push(comment);
-                let commentsLength = comments.length;
-                console.log(commentsLength)
-                console.log(comments)
-                $("#hideCommentButton").text('댓글 ' + commentsLength + '개 모두 보기');
-
-                if ($('#comments').css('height') < '55px') {
-                    return;
-                } else {
-                    $('#comments').hide();
-                    $('#hideComment').show();
-                }
+                $.ajax({
+                    type: "POST",
+                    url: "/comment",
+                    data: {userGive: "someone", commentGive: comment},
+                    success: function (response) {
+                        window.location.reload()
+                    }
+                })
             }
+        }
+
+        function showComment() {
+            $.ajax({
+                type: "GET",
+                url: "/comment",
+                data: {},
+                success: function (response) {
+
+                    let comments = response.comments;
+
+                    for (let i = 0; i < comments.length; i++) {
+                        let user = comments[i]['user']
+                        let comment = comments[i]['comment']
+                        let temp_html = `<div class="commentBox">
+                                            <a class="commentUserId" alt="계정">${user}</a>
+                                            <span class="comment">${comment}</span>
+                                        </div>`
+                        $('#comments').append(temp_html);
+                    }
+
+                    let commentsLength = Object.keys(comments).length;
+                    console.log(commentsLength)
+                    $("#hideCommentButton").text('댓글 ' + commentsLength + '개 모두 보기');
+
+                    if (commentsLength >= 4) {
+                        $('#comments').hide();
+                        $('#hideComment').show();
+                    }
+                }
+            })
         }
 
         function showComments() {
             $('#comments').show();
             $('#hideComment').hide();
         }
+
     </script>
 </head>
 <body>
@@ -65,7 +88,7 @@
     <div class="bar">
         <div class="logoBox">
             <a href="/">
-                <img src="img/logo.png" class="logo">
+                <img src="../static/img/logo.png" class="logo">
             </a>
         </div>
         <div class="inputBox">
