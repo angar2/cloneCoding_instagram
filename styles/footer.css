@@ -1,0 +1,10 @@
+.footer {
+    height: 134px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.footerBox {
+    height: 100%;
+    margin: 24px 0px 52px 0px;
+}

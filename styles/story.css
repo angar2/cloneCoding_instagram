@@ -1,0 +1,48 @@
+.story {
+    height: 119px;
+    margin-bottom: 24px;
+    padding: 16px 0px 16px 0px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.storyBox {
+    display: flex;
+}
+
+.storyEmptyBox {
+    width: 10px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.storyProfileBox {
+    width: 80px;
+}
+
+.storyProfile {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #efefef;
+    overflow: hidden;
+    margin: 4px auto 8px auto;
+    border: 1px solid #dbdbdb;
+}
+
+.storyProfileId {
+    letter-spacing: .01em;
+    max-width: 74px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}

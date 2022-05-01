@@ -1,0 +1,17 @@
+@import "header.css";
+@import "main.css";
+@import "story.css";
+@import "feed.css";
+@import "aside.css";
+@import "footer.css";
+
+body {
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}

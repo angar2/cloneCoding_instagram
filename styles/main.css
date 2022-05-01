@@ -1,0 +1,20 @@
+.main {
+    background-color: #efefef;
+
+}
+
+.mainView {
+    margin: auto;
+    width: 935px;
+    height: 1000px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.mainSection {
+    float: left;
+    width: 614px;
+    height: 600px;
+    margin: 0px 28px 0px 0px;
+}

@@ -1,0 +1,230 @@
+.feed {
+    display: inline;
+    background-color: #efefef;
+}
+
+.content {
+    margin-bottom: 24px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 0px -1px 24px -1px;
+}
+
+.contentHeader {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.userIdBox {
+    width: 100%;
+    height: 100%;
+    padding-top: 14px;
+    padding-right: 4px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.userProfile {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+}
+
+.userProfileImg {
+
+}
+
+.userId {
+    height: 100%;
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.userIdLink {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.meatMenuBox {
+    padding-right: 8px;
+}
+
+.meatMenuButton {
+    padding: 8px;
+    border: 0;
+    background: 0;
+    cursor: pointer; /*손모양 버튼*/
+}
+
+.meatMenu {
+    display: flex;
+    position: relative;
+    color: #262626;
+    fill: #262626;
+    height: 24px;
+    width: 24px;
+}
+
+.contentBody {
+    width: 614px;
+    height: 614px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 0 solid #000;
+}
+
+.contentImg {
+}
+
+.contentBottom {
+}
+
+.contentBottomMenuBox {
+    height: 40px;
+    margin: 0px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+
+}
+
+.contentBottomMenu {
+    float: left;
+}
+
+.contentBottomMenuButton {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 8px;
+    border: none;
+    background-color: #ffffff;
+}
+
+.contentBottomMenuButtonIcon {
+    color: #262626;
+    fill: #262626;
+    height: 24px;
+    width: 24px;
+}
+
+.likeStatus {
+    height: 18px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 8px;
+}
+
+.likeStatusBox {
+    height: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.comments {
+    max-height: 88px;
+    box-sizing: border-box;
+    margin: 0px 0px auto 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.commentBox {
+
+}
+
+.commentUserId {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.comment {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.elapsedTime {
+    padding: 0px 16px 0px 16px;
+    margin-bottom: 16px;
+}
+
+.when {
+    cursor: pointer;
+    color: #00376b;
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.commentInputArea {
+    display: flex;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-top: 1px solid #efefef;
+}
+
+.commentEmoticonBox {
+    padding: 8px 16px 8px 0;
+}
+
+.commentEmoticonButton {
+    padding: 0;
+    border: 0;
+    background-color: #ffffff;
+}
+
+.commentEmoticon {
+    height: 24px;
+    width: 24px;
+}
+
+.commentInputBox {
+    display: flex;
+    align-items: center;
+}
+
+.commentInput {
+    height: 18px;
+    border: 0;
+    outline: none;
+}
+
+.commentPostbox {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.commentPostBotton {
+    background-color: #ffffff;
+    border: 0;
+    cursor: pointer;
+}
+
+.commentPost {
+
+}

@@ -1,0 +1,83 @@
+.aside {
+    float: left;
+    width: 293px;
+    height: 400px;
+    margin: 0px 0px 40px 0px;
+    background-color: #efefef;
+}
+
+.asideBox {
+
+}
+
+.asideProfileBox {
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 18px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.asideProfile {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #efefef;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+}
+
+.asideProfileImg {
+
+}
+
+.asideId {
+    height: 100%;
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.asideIdLink {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.asideButttonBox {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.asideButtton {
+    background-color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin: -2px 0 -3px;
+    background-color: #efefef;
+}
+
+.asideRecommend {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.asideRecommendMent {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin: -3px 0 -4px;
+    color: #8e8e8e;
+}
