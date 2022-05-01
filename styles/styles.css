@@ -5,6 +5,7 @@
 @import "feed.css";
 @import "aside.css";
 @import "footer.css";
+@import "relative.css";
 
 body {
     background-color: #efefef;
@@ -13,6 +14,7 @@ body {
 }
 
 header {
-    position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
 }
