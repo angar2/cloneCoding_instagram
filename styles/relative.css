@@ -1,10 +1,17 @@
-@media screen and (min-width: 1000px) {
-  .view {
-    margin: auto;
+@media screen and (max-width: 1000px) {
+  .mainSection {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aside {
+    display: none;
   }
 }
 
 @media screen and (max-width: 632px) {
+  .mainSection {
+    width: 100%;
+  }
   .inputBox {
     display: none;
   }

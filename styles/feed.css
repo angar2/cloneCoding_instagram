@@ -1,9 +1,11 @@
 .feed {
+    width: 100%;
     display: inline;
     background-color: #efefef;
 }
 
 .content {
+    width: 100%;
     margin-bottom: 24px;
     background-color: #ffffff;
     border: 1px solid #dbdbdb;
@@ -13,6 +15,7 @@
 
 .contentHeader {
     display: flex;
+    width: 100%;
     height: 60px;
     align-items: center;
 }
@@ -80,8 +83,8 @@
 }
 
 .contentBody {
-    width: 614px;
-    height: 614px;
+    width: 100%;
+    max-height: 640px;
     background-color: gray;
     display: flex;
     justify-content: center;
@@ -90,6 +93,8 @@
 }
 
 .contentImg {
+    width: 100%;
+    height: 100%;"
 }
 
 .contentBottom {
