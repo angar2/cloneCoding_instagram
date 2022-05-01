@@ -99,7 +99,8 @@
             margin: auto;
             width: 935px;
             height: 1000px;
-            margin-top: 24px;
+            padding-top: 30px;
+            box-sizing: border-box;
             justify-content: center;
         }
 
@@ -110,16 +111,8 @@
             margin: 0px 28px 0px 0px;
         }
 
-        .aside {
-            float: left;
-            width: 293px;
-            height: 400px;
-            margin: 0px 0px 40px 0px;
-            background-color: white;
-        }
-
         .story {
-            height: 103px;
+            height: 119px;
             margin-bottom: 24px;
             padding: 16px 0px 16px 0px;
             background-color: #ffffff;
@@ -306,6 +299,7 @@
             font-size: 10px;
             line-height: 12px;
         }
+
         .commentInputArea {
             display: flex;
             padding-top: 6px;
@@ -314,6 +308,7 @@
             padding-right: 16px;
             border-top: 1px solid #efefef;
         }
+
         .commentEmoticonBox {
             padding: 8px 16px 8px 0;
         }
@@ -351,9 +346,94 @@
             border: 0;
             cursor: pointer;
         }
+
         .commentPost {
 
         }
+
+        .aside {
+            float: left;
+            width: 293px;
+            height: 400px;
+            margin: 0px 0px 40px 0px;
+            background-color: #efefef;
+        }
+
+        .asideBox {
+
+        }
+
+        .asideProfileBox {
+            height: auto;
+            margin-bottom: 10px;
+            margin-top: 18px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+
+        .asideProfile {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #efefef;
+            overflow: hidden;
+        }
+
+        .asideProfileImg {
+
+        }
+
+        .asideId {
+            height: 100%;
+            margin-left: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .asideIdLink {
+            font-size: 14px;
+            font-weight: 600;
+            color: #262626;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .asideButttonBox {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .asideButtton {
+            background-color: #ffffff;
+            border: 0;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            margin: -2px 0 -3px;
+            background-color: #efefef;
+        }
+
+        .asideRecommend {
+            display: flex;
+            align-items: center;
+            margin-top: 28px;
+        }
+
+        .asideRecommendMent {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            margin: -3px 0 -4px;
+            color: #8e8e8e;
+        }
+
         .footer {
             height: 134px;
             padding-right: 16px;
@@ -508,6 +588,106 @@
             </div>
         </section>
         <aside class="aside">
+            <div class="asideBox">
+                <div class="asideProfileBox">
+                    <div class="asideProfile">
+                        <a class="asideProfileImg" href="">
+                            <img alt="" style="height: 100% "
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAe1BMVEUAAAD///94eHiIh4fr6uq/v79ubW1AQEAOCglfX1/19fXFxcVNTk7T09MbHBz5+fnw8PBTU1NISEimpqaOjo60tLTR0dFycnKamprf39+DgoK7u7uoqKhnZ2fMy8tZWFgnJyc7OzuenZ0rKysWFxc8PD00NDSTk5MqKiqfqhxGAAADhElEQVR4nO3ca3OaQBiGYZZgREDAA1GI4CGp6f//hWVhF8VRTLrTguN9fWjfBZ155xkMy9GyAAAAAAAAAAAAAAAAAAAAAAD4J4JJS9B3Pw+mEC1p3/08GL8d37Tvfh4M8RkhPiPEZ4T4jBCfEeIzQnxGiM8IRx1G5uVxrlNH58045v0bKr647z4eFPEZSYnvp7LYaej9xmlJvOi7v4Fbik5J3/0NHPEZybrj2/Td34DZIoq60xPyEy999zlQ9r3sasR3HfEZIT4jxGeE+IwQnxHiM0J8RojPCPEZkfGl7yPt3avjik6LRinx3STjOz8ncOVs85L4bvpGfF/EdxNbnxEZ3/RwWORqfBHfZHE4FMR3k97z6gsaF/Gt2fN2uhPfF/F10vEd1DhWExc1XBJfJx2fUxTTbTmevFbkn8JgWhQp8XU6P+p4ba/KOeq4qyO+CfHddR7fpL1qRnx3ncfnxXE0rhe7URx7xHfX5RkXHd/FYuK7jviMEJ8R4jNCfEaIzwjxGXvpjo/bI7stic8E8Rmx0zSNr8cXl6vW/Xb3ENbX42PL+54D8ZlYEJ8J2x+NnHZ88WjkM9/7vlE7vrd+u3k4fjs+nib/mYL4TGSbzeajLt2yXPbbDQAAAPCQDvG87xYGyF1Vd0Su5AFHqOrdRV3hgts1+kY0+covfUvksaxXqt7VH9stvWTcX5fDsk2SsCo+3tLIkyLLOupaWNZc1/ou8TLZ8t8s4aVCVnVyvi5yXVjV9tbU2VmtVhaf8h1XvNbPytZppGJYNnfRy+tFXlMvhNP6ii98+Z8TpWv7P3Q4aLF41+W7SMczaS/r0zk+/+Js80aPvSd/rdCnXf5Im4u3uX4FU/k3bXpKtfyVti4TeUJtc59CJPYzT2C2QmzPhvqimi03ytMl8Ui0Tpc6p1WhEM/8810K8Zq7zdD92O1242reIsSqWSxEfvrKOBV6gztOyu8/89ZX3VLltpfkcsmv5lKHZQXNfE861jNB6XC5R34+iYj2agNyQ0k++lfPW8J6XM1bdG1NfMeu8x6Pi4s98hPahb6erui7qzZf8uFd9TxlOafJdS33xUkz2fNEEe566npAUj1FSVR89UhFNpK1eiqm3BcHRZqp7/EyxMo82NfFPqion3I9CI7t2hM6PXc2+91Dt4/tLcrufwi3hH03AAAAAAAAAAAAAAAAAAAAANzyB4pNKJ8YwnkFAAAAAElFTkSuQmCC">
+                        </a>
+                    </div>
+                    <div class="asideId">
+                        <a class="asideIdLink" href="">spartacodingclub</a>
+                    </div>
+                    <div class="asideButttonBox">
+                        <button class="asideButtton">전환</button>
+                    </div>
+                </div>
+                <div class="asideRecommend">
+                    <div class="asideRecommendMent">회원님을 위한 추천</div>
+                    <div class="asideButttonBox">
+                        <button class="asideButtton">모두 보기</button>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="asideProfileBox">
+
+                        <div class="asideProfile" style="width: 32px; height: 32px;">
+                            <a class="asideProfileImg" href="">
+                                <img alt="" style="height: 100% "
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAe1BMVEUAAAD///94eHiIh4fr6uq/v79ubW1AQEAOCglfX1/19fXFxcVNTk7T09MbHBz5+fnw8PBTU1NISEimpqaOjo60tLTR0dFycnKamprf39+DgoK7u7uoqKhnZ2fMy8tZWFgnJyc7OzuenZ0rKysWFxc8PD00NDSTk5MqKiqfqhxGAAADhElEQVR4nO3ca3OaQBiGYZZgREDAA1GI4CGp6f//hWVhF8VRTLrTguN9fWjfBZ155xkMy9GyAAAAAAAAAAAAAAAAAAAAAAD4J4JJS9B3Pw+mEC1p3/08GL8d37Tvfh4M8RkhPiPEZ4T4jBCfEeIzQnxGiM8IRx1G5uVxrlNH58045v0bKr647z4eFPEZSYnvp7LYaej9xmlJvOi7v4Fbik5J3/0NHPEZybrj2/Td34DZIoq60xPyEy999zlQ9r3sasR3HfEZIT4jxGeE+IwQnxHiM0J8RojPCPEZkfGl7yPt3avjik6LRinx3STjOz8ncOVs85L4bvpGfF/EdxNbnxEZ3/RwWORqfBHfZHE4FMR3k97z6gsaF/Gt2fN2uhPfF/F10vEd1DhWExc1XBJfJx2fUxTTbTmevFbkn8JgWhQp8XU6P+p4ba/KOeq4qyO+CfHddR7fpL1qRnx3ncfnxXE0rhe7URx7xHfX5RkXHd/FYuK7jviMEJ8R4jNCfEaIzwjxGXvpjo/bI7stic8E8Rmx0zSNr8cXl6vW/Xb3ENbX42PL+54D8ZlYEJ8J2x+NnHZ88WjkM9/7vlE7vrd+u3k4fjs+nib/mYL4TGSbzeajLt2yXPbbDQAAAPCQDvG87xYGyF1Vd0Su5AFHqOrdRV3hgts1+kY0+covfUvksaxXqt7VH9stvWTcX5fDsk2SsCo+3tLIkyLLOupaWNZc1/ou8TLZ8t8s4aVCVnVyvi5yXVjV9tbU2VmtVhaf8h1XvNbPytZppGJYNnfRy+tFXlMvhNP6ii98+Z8TpWv7P3Q4aLF41+W7SMczaS/r0zk+/+Js80aPvSd/rdCnXf5Im4u3uX4FU/k3bXpKtfyVti4TeUJtc59CJPYzT2C2QmzPhvqimi03ytMl8Ui0Tpc6p1WhEM/8810K8Zq7zdD92O1242reIsSqWSxEfvrKOBV6gztOyu8/89ZX3VLltpfkcsmv5lKHZQXNfE861jNB6XC5R34+iYj2agNyQ0k++lfPW8J6XM1bdG1NfMeu8x6Pi4s98hPahb6erui7qzZf8uFd9TxlOafJdS33xUkz2fNEEe566npAUj1FSVR89UhFNpK1eiqm3BcHRZqp7/EyxMo82NfFPqion3I9CI7t2hM6PXc2+91Dt4/tLcrufwi3hH03AAAAAAAAAAAAAAAAAAAAANzyB4pNKJ8YwnkFAAAAAElFTkSuQmCC">
+                            </a>
+                        </div>
+                        <div class="asideId">
+                            <a class="asideIdLink" href="">spartacodingclub</a>
+                        </div>
+                        <div class="asideButttonBox">
+                            <button class="asideButtton">팔로우</button>
+                        </div>
+                    </div>
+                    <div class="asideProfileBox">
+
+                        <div class="asideProfile" style="width: 32px; height: 32px;">
+                            <a class="asideProfileImg" href="">
+                                <img alt="" style="height: 100% "
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAe1BMVEUAAAD///94eHiIh4fr6uq/v79ubW1AQEAOCglfX1/19fXFxcVNTk7T09MbHBz5+fnw8PBTU1NISEimpqaOjo60tLTR0dFycnKamprf39+DgoK7u7uoqKhnZ2fMy8tZWFgnJyc7OzuenZ0rKysWFxc8PD00NDSTk5MqKiqfqhxGAAADhElEQVR4nO3ca3OaQBiGYZZgREDAA1GI4CGp6f//hWVhF8VRTLrTguN9fWjfBZ155xkMy9GyAAAAAAAAAAAAAAAAAAAAAAD4J4JJS9B3Pw+mEC1p3/08GL8d37Tvfh4M8RkhPiPEZ4T4jBCfEeIzQnxGiM8IRx1G5uVxrlNH58045v0bKr647z4eFPEZSYnvp7LYaej9xmlJvOi7v4Fbik5J3/0NHPEZybrj2/Td34DZIoq60xPyEy999zlQ9r3sasR3HfEZIT4jxGeE+IwQnxHiM0J8RojPCPEZkfGl7yPt3avjik6LRinx3STjOz8ncOVs85L4bvpGfF/EdxNbnxEZ3/RwWORqfBHfZHE4FMR3k97z6gsaF/Gt2fN2uhPfF/F10vEd1DhWExc1XBJfJx2fUxTTbTmevFbkn8JgWhQp8XU6P+p4ba/KOeq4qyO+CfHddR7fpL1qRnx3ncfnxXE0rhe7URx7xHfX5RkXHd/FYuK7jviMEJ8R4jNCfEaIzwjxGXvpjo/bI7stic8E8Rmx0zSNr8cXl6vW/Xb3ENbX42PL+54D8ZlYEJ8J2x+NnHZ88WjkM9/7vlE7vrd+u3k4fjs+nib/mYL4TGSbzeajLt2yXPbbDQAAAPCQDvG87xYGyF1Vd0Su5AFHqOrdRV3hgts1+kY0+covfUvksaxXqt7VH9stvWTcX5fDsk2SsCo+3tLIkyLLOupaWNZc1/ou8TLZ8t8s4aVCVnVyvi5yXVjV9tbU2VmtVhaf8h1XvNbPytZppGJYNnfRy+tFXlMvhNP6ii98+Z8TpWv7P3Q4aLF41+W7SMczaS/r0zk+/+Js80aPvSd/rdCnXf5Im4u3uX4FU/k3bXpKtfyVti4TeUJtc59CJPYzT2C2QmzPhvqimi03ytMl8Ui0Tpc6p1WhEM/8810K8Zq7zdD92O1242reIsSqWSxEfvrKOBV6gztOyu8/89ZX3VLltpfkcsmv5lKHZQXNfE861jNB6XC5R34+iYj2agNyQ0k++lfPW8J6XM1bdG1NfMeu8x6Pi4s98hPahb6erui7qzZf8uFd9TxlOafJdS33xUkz2fNEEe566npAUj1FSVR89UhFNpK1eiqm3BcHRZqp7/EyxMo82NfFPqion3I9CI7t2hM6PXc2+91Dt4/tLcrufwi3hH03AAAAAAAAAAAAAAAAAAAAANzyB4pNKJ8YwnkFAAAAAElFTkSuQmCC">
+                            </a>
+                        </div>
+                        <div class="asideId">
+                            <a class="asideIdLink" href="">spartacodingclub</a>
+                        </div>
+                        <div class="asideButttonBox">
+                            <button class="asideButtton">팔로우</button>
+                        </div>
+                    </div>
+                    <div class="asideProfileBox">
+
+                        <div class="asideProfile" style="width: 32px; height: 32px;">
+                            <a class="asideProfileImg" href="">
+                                <img alt="" style="height: 100% "
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAe1BMVEUAAAD///94eHiIh4fr6uq/v79ubW1AQEAOCglfX1/19fXFxcVNTk7T09MbHBz5+fnw8PBTU1NISEimpqaOjo60tLTR0dFycnKamprf39+DgoK7u7uoqKhnZ2fMy8tZWFgnJyc7OzuenZ0rKysWFxc8PD00NDSTk5MqKiqfqhxGAAADhElEQVR4nO3ca3OaQBiGYZZgREDAA1GI4CGp6f//hWVhF8VRTLrTguN9fWjfBZ155xkMy9GyAAAAAAAAAAAAAAAAAAAAAAD4J4JJS9B3Pw+mEC1p3/08GL8d37Tvfh4M8RkhPiPEZ4T4jBCfEeIzQnxGiM8IRx1G5uVxrlNH58045v0bKr647z4eFPEZSYnvp7LYaej9xmlJvOi7v4Fbik5J3/0NHPEZybrj2/Td34DZIoq60xPyEy999zlQ9r3sasR3HfEZIT4jxGeE+IwQnxHiM0J8RojPCPEZkfGl7yPt3avjik6LRinx3STjOz8ncOVs85L4bvpGfF/EdxNbnxEZ3/RwWORqfBHfZHE4FMR3k97z6gsaF/Gt2fN2uhPfF/F10vEd1DhWExc1XBJfJx2fUxTTbTmevFbkn8JgWhQp8XU6P+p4ba/KOeq4qyO+CfHddR7fpL1qRnx3ncfnxXE0rhe7URx7xHfX5RkXHd/FYuK7jviMEJ8R4jNCfEaIzwjxGXvpjo/bI7stic8E8Rmx0zSNr8cXl6vW/Xb3ENbX42PL+54D8ZlYEJ8J2x+NnHZ88WjkM9/7vlE7vrd+u3k4fjs+nib/mYL4TGSbzeajLt2yXPbbDQAAAPCQDvG87xYGyF1Vd0Su5AFHqOrdRV3hgts1+kY0+covfUvksaxXqt7VH9stvWTcX5fDsk2SsCo+3tLIkyLLOupaWNZc1/ou8TLZ8t8s4aVCVnVyvi5yXVjV9tbU2VmtVhaf8h1XvNbPytZppGJYNnfRy+tFXlMvhNP6ii98+Z8TpWv7P3Q4aLF41+W7SMczaS/r0zk+/+Js80aPvSd/rdCnXf5Im4u3uX4FU/k3bXpKtfyVti4TeUJtc59CJPYzT2C2QmzPhvqimi03ytMl8Ui0Tpc6p1WhEM/8810K8Zq7zdD92O1242reIsSqWSxEfvrKOBV6gztOyu8/89ZX3VLltpfkcsmv5lKHZQXNfE861jNB6XC5R34+iYj2agNyQ0k++lfPW8J6XM1bdG1NfMeu8x6Pi4s98hPahb6erui7qzZf8uFd9TxlOafJdS33xUkz2fNEEe566npAUj1FSVR89UhFNpK1eiqm3BcHRZqp7/EyxMo82NfFPqion3I9CI7t2hM6PXc2+91Dt4/tLcrufwi3hH03AAAAAAAAAAAAAAAAAAAAANzyB4pNKJ8YwnkFAAAAAElFTkSuQmCC">
+                            </a>
+                        </div>
+                        <div class="asideId">
+                            <a class="asideIdLink" href="">spartacodingclub</a>
+                        </div>
+                        <div class="asideButttonBox">
+                            <button class="asideButtton">팔로우</button>
+                        </div>
+                    </div>
+                    <div class="asideProfileBox">
+
+                        <div class="asideProfile" style="width: 32px; height: 32px;">
+                            <a class="asideProfileImg" href="">
+                                <img alt="" style="height: 100% "
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAe1BMVEUAAAD///94eHiIh4fr6uq/v79ubW1AQEAOCglfX1/19fXFxcVNTk7T09MbHBz5+fnw8PBTU1NISEimpqaOjo60tLTR0dFycnKamprf39+DgoK7u7uoqKhnZ2fMy8tZWFgnJyc7OzuenZ0rKysWFxc8PD00NDSTk5MqKiqfqhxGAAADhElEQVR4nO3ca3OaQBiGYZZgREDAA1GI4CGp6f//hWVhF8VRTLrTguN9fWjfBZ155xkMy9GyAAAAAAAAAAAAAAAAAAAAAAD4J4JJS9B3Pw+mEC1p3/08GL8d37Tvfh4M8RkhPiPEZ4T4jBCfEeIzQnxGiM8IRx1G5uVxrlNH58045v0bKr647z4eFPEZSYnvp7LYaej9xmlJvOi7v4Fbik5J3/0NHPEZybrj2/Td34DZIoq60xPyEy999zlQ9r3sasR3HfEZIT4jxGeE+IwQnxHiM0J8RojPCPEZkfGl7yPt3avjik6LRinx3STjOz8ncOVs85L4bvpGfF/EdxNbnxEZ3/RwWORqfBHfZHE4FMR3k97z6gsaF/Gt2fN2uhPfF/F10vEd1DhWExc1XBJfJx2fUxTTbTmevFbkn8JgWhQp8XU6P+p4ba/KOeq4qyO+CfHddR7fpL1qRnx3ncfnxXE0rhe7URx7xHfX5RkXHd/FYuK7jviMEJ8R4jNCfEaIzwjxGXvpjo/bI7stic8E8Rmx0zSNr8cXl6vW/Xb3ENbX42PL+54D8ZlYEJ8J2x+NnHZ88WjkM9/7vlE7vrd+u3k4fjs+nib/mYL4TGSbzeajLt2yXPbbDQAAAPCQDvG87xYGyF1Vd0Su5AFHqOrdRV3hgts1+kY0+covfUvksaxXqt7VH9stvWTcX5fDsk2SsCo+3tLIkyLLOupaWNZc1/ou8TLZ8t8s4aVCVnVyvi5yXVjV9tbU2VmtVhaf8h1XvNbPytZppGJYNnfRy+tFXlMvhNP6ii98+Z8TpWv7P3Q4aLF41+W7SMczaS/r0zk+/+Js80aPvSd/rdCnXf5Im4u3uX4FU/k3bXpKtfyVti4TeUJtc59CJPYzT2C2QmzPhvqimi03ytMl8Ui0Tpc6p1WhEM/8810K8Zq7zdD92O1242reIsSqWSxEfvrKOBV6gztOyu8/89ZX3VLltpfkcsmv5lKHZQXNfE861jNB6XC5R34+iYj2agNyQ0k++lfPW8J6XM1bdG1NfMeu8x6Pi4s98hPahb6erui7qzZf8uFd9TxlOafJdS33xUkz2fNEEe566npAUj1FSVR89UhFNpK1eiqm3BcHRZqp7/EyxMo82NfFPqion3I9CI7t2hM6PXc2+91Dt4/tLcrufwi3hH03AAAAAAAAAAAAAAAAAAAAANzyB4pNKJ8YwnkFAAAAAElFTkSuQmCC">
+                            </a>
+                        </div>
+                        <div class="asideId">
+                            <a class="asideIdLink" href="">spartacodingclub</a>
+                        </div>
+                        <div class="asideButttonBox">
+                            <button class="asideButtton">팔로우</button>
+                        </div>
+                    </div>
+                    <div class="asideProfileBox">
+
+                        <div class="asideProfile" style="width: 32px; height: 32px;">
+                            <a class="asideProfileImg" href="">
+                                <img alt="" style="height: 100% "
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAe1BMVEUAAAD///94eHiIh4fr6uq/v79ubW1AQEAOCglfX1/19fXFxcVNTk7T09MbHBz5+fnw8PBTU1NISEimpqaOjo60tLTR0dFycnKamprf39+DgoK7u7uoqKhnZ2fMy8tZWFgnJyc7OzuenZ0rKysWFxc8PD00NDSTk5MqKiqfqhxGAAADhElEQVR4nO3ca3OaQBiGYZZgREDAA1GI4CGp6f//hWVhF8VRTLrTguN9fWjfBZ155xkMy9GyAAAAAAAAAAAAAAAAAAAAAAD4J4JJS9B3Pw+mEC1p3/08GL8d37Tvfh4M8RkhPiPEZ4T4jBCfEeIzQnxGiM8IRx1G5uVxrlNH58045v0bKr647z4eFPEZSYnvp7LYaej9xmlJvOi7v4Fbik5J3/0NHPEZybrj2/Td34DZIoq60xPyEy999zlQ9r3sasR3HfEZIT4jxGeE+IwQnxHiM0J8RojPCPEZkfGl7yPt3avjik6LRinx3STjOz8ncOVs85L4bvpGfF/EdxNbnxEZ3/RwWORqfBHfZHE4FMR3k97z6gsaF/Gt2fN2uhPfF/F10vEd1DhWExc1XBJfJx2fUxTTbTmevFbkn8JgWhQp8XU6P+p4ba/KOeq4qyO+CfHddR7fpL1qRnx3ncfnxXE0rhe7URx7xHfX5RkXHd/FYuK7jviMEJ8R4jNCfEaIzwjxGXvpjo/bI7stic8E8Rmx0zSNr8cXl6vW/Xb3ENbX42PL+54D8ZlYEJ8J2x+NnHZ88WjkM9/7vlE7vrd+u3k4fjs+nib/mYL4TGSbzeajLt2yXPbbDQAAAPCQDvG87xYGyF1Vd0Su5AFHqOrdRV3hgts1+kY0+covfUvksaxXqt7VH9stvWTcX5fDsk2SsCo+3tLIkyLLOupaWNZc1/ou8TLZ8t8s4aVCVnVyvi5yXVjV9tbU2VmtVhaf8h1XvNbPytZppGJYNnfRy+tFXlMvhNP6ii98+Z8TpWv7P3Q4aLF41+W7SMczaS/r0zk+/+Js80aPvSd/rdCnXf5Im4u3uX4FU/k3bXpKtfyVti4TeUJtc59CJPYzT2C2QmzPhvqimi03ytMl8Ui0Tpc6p1WhEM/8810K8Zq7zdD92O1242reIsSqWSxEfvrKOBV6gztOyu8/89ZX3VLltpfkcsmv5lKHZQXNfE861jNB6XC5R34+iYj2agNyQ0k++lfPW8J6XM1bdG1NfMeu8x6Pi4s98hPahb6erui7qzZf8uFd9TxlOafJdS33xUkz2fNEEe566npAUj1FSVR89UhFNpK1eiqm3BcHRZqp7/EyxMo82NfFPqion3I9CI7t2hM6PXc2+91Dt4/tLcrufwi3hH03AAAAAAAAAAAAAAAAAAAAANzyB4pNKJ8YwnkFAAAAAElFTkSuQmCC">
+                            </a>
+                        </div>
+                        <div class="asideId">
+                            <a class="asideIdLink" href="">spartacodingclub</a>
+                        </div>
+                        <div class="asideButttonBox">
+                            <button class="asideButtton">팔로우</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </aside>
     </div>
     <footer class="footer">
