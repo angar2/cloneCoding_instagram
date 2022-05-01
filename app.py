@@ -12,7 +12,7 @@ def home():
 
 @app.route('/comment', methods=['GET'])
 def listing():
-    comments = list(db.instargramUsers.find({}, {'_id': False}))
+    comments = list(db.instargramComments.find({}, {'_id': False}))
     return jsonify({'comments':comments})
 
 ## API 역할을 하는 부분
@@ -25,7 +25,7 @@ def saving():
         'user': userReceive,
         'comment': commentReceive
     }
-    db.instargramUsers.insert_one(doc)
+    db.instargramComments.insert_one(doc)
 
     return jsonify()
 
