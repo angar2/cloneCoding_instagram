@@ -148,16 +148,20 @@
 }
 
 .comments {
-    max-height: 88px;
+    display: block;
     box-sizing: border-box;
-    margin: 0px 0px auto 0px;
+    margin: 3px 0px auto 0px;
     padding-left: 16px;
     padding-right: 16px;
 }
 
+.commentBlock {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
 .commentBox {
     display: flex;
-    margin-bottom: 4px;
 }
 
 .commentUserId {
@@ -176,6 +180,23 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.hideComment {
+    margin-top: 4px;
+    padding-left: 16px;
+
+}
+
+.hideCommentButton {
+    padding: 0px;
+    background-color: #ffffff;
+    border: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8e8e8e;
+    cursor: pointer;
 }
 
 .elapsedTime {
