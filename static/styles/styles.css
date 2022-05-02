@@ -18,3 +18,11 @@ header {
     left: 0;
     right: 0;
 }
+
+a {
+    color: #262626;
+}
+
+a:hover {
+    color: #262626;
+}
