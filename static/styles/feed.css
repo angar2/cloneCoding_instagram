@@ -98,6 +98,8 @@
 }
 
 .contentBottom {
+    display: flex;
+    flex-direction: column;
 }
 
 .contentBottomMenuBox {
@@ -122,6 +124,7 @@
     border: none;
     background-color: #ffffff;
     cursor: pointer;
+    outline:none;
 }
 
 .contentBottomMenuButtonIcon {
@@ -133,11 +136,13 @@
 }
 
 .likeStatus {
+    display: flex;
+    align-items: center;
     height: 18px;
     box-sizing: border-box;
     padding-left: 16px;
     padding-right: 16px;
-    margin-bottom: 8px;
+    margin-top: 13px;
 }
 
 .likeStatusBox {
@@ -158,6 +163,7 @@
 .commentBlock {
     display: flex;
     flex-direction: column;
+    margin-top: 6px;
     margin-bottom: 4px;
 }
 .commentBox {
@@ -172,6 +178,13 @@
     margin-right: 5px;
 }
 
+.desc {
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
 .comment {
     max-width: 600px;
     font-weight: 400;
@@ -182,7 +195,25 @@
     white-space: nowrap;
 }
 
+.readMore {
+    display: none;
+}
+
+.readMoreButton {
+    width: 100px;
+    margin-left: auto;
+    padding: 0px;
+    background-color: #ffffff;
+    border: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8e8e8e;
+    cursor: pointer;
+}
+
 .hideComment {
+    display: none;
     margin-top: 4px;
     padding-left: 16px;
 
